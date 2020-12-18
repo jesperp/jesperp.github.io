@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  @apply bg-primary-100;
+}
+
+html.dark body {
+  @apply bg-gray-900;
+}
+
+#hand {
+  animation-name: wiggle;
+  animation-duration: 1s;
+  animation-delay: 320ms;
+}
+
+#site-title ~ p {
+  @apply mt-2;
+  @apply sm:pl-4;
+}
+
+h1,h2,h3,h4,summary {
+  @apply font-bold;
+}
+
+details {
+  @apply text-lg;
+  @apply mb-2;
+}
+
+details p {
+  @apply text-base;
+  @apply leading-7;
+}
+
+.card > p {
+  @apply tracking-wide;
+  @apply text-base;
+  @apply sm:text-lg;
+  @apply leading-7;
+}
+
+
+@keyframes wiggle {
+  from { }
+  25% {
+    transform: rotate(9deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  to {
+  }
+}
