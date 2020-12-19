@@ -1,5 +1,6 @@
 {
   "name": "jesperpetersen.se",
+  "homepage": "https://jesperpetersen.se",
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
