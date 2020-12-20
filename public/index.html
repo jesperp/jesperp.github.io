@@ -29,20 +29,6 @@
       display: block;
     }
   </style>
-  <script>
-  const darkMode = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function setDarkClass(watchMedia) {
-    const classList = document.querySelector('html').classList;
-    if (watchMedia.matches)
-      classList.add('dark')
-    else
-      classList.remove('dark')
-  }
-  setDarkClass(darkMode)
-  darkMode.addEventListener('change', setDarkClass);
-  
-  </script>
 </head>
 <body class="dark:bg-gray-900 dark:text-gray-300">
   <main class="flex items-start h-full m-6 mx-4 sm:m-14 ">
@@ -115,5 +101,19 @@
 
   </main>
 
+  <script>
+  const darkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function setDarkClass(watchMedia) {
+    const classList = document.querySelector('html').classList;
+    if (watchMedia.matches)
+      classList.add('dark')
+    else
+      classList.remove('dark')
+  }
+  setDarkClass(darkMode)
+  darkMode.addEventListener('change', setDarkClass);
+  
+  </script>
 </body>
 </html>
