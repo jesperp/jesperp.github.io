@@ -7,7 +7,7 @@
   "scripts": {
     "build:prod": "NODE_ENV=production postcss src/**/*.css --dir public/css",
     "build:dev": "postcss src/**/*.css --dir public/css",
-    "watch:dev": "postcss --verbose src/**/*.css --dir public/css --watch",
+    "watch": "postcss --verbose src/**/*.css --dir public/css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
