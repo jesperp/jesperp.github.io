@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
 body {
   @apply bg-primary-100;
-}
-
-html.dark body {
-  @apply bg-gray-900;
 }
 
 #hand {
