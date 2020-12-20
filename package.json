@@ -5,7 +5,7 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "publish": "gh-pages public/",
+    "publish": "gh-pages -d public/",
     "build:prod": "NODE_ENV=production postcss src/**/*.css --dir public/css",
     "build:dev": "postcss src/**/*.css --dir public/css",
     "watch": "postcss --verbose src/**/*.css --dir public/css --watch",
