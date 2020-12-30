@@ -38,6 +38,14 @@
 
   #taskpen, #drink { display:none; }
 
+  /* Light Mode */
+    .sun { display: block; }
+    .moon { display: none; }
+    #lamp linearGradient { display: none; }
+    #lamp .bulb { fill:none; }
+  /* End of Light Mode */
+
+  /* Dark Mode */
   @media (prefers-color-scheme: dark) {
     body {
       background-color: rgba(31, 41, 55, 1);
@@ -52,12 +60,8 @@
 
     a { color: #F7B66F; }
   }
-  @media (prefers-color-scheme: light) {
-    .sun { display: block; }
-    .moon { display: none; }
-    #lamp linearGradient { display: none; }
-    #lamp .bulb { fill:none; }
-  }
+  /* End of Dark Mode */
+
 
   @media (min-width: 640px) {
     #taskpen,#drink { display: block; }
